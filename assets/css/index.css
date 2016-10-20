@@ -1,0 +1,52 @@
+body {
+  color: #323232;
+  margin: 0;
+}
+.main {
+  margin: 30px;
+  padding: 10px;
+}
+
+nav {
+  height: 80px;
+  overflow: hidden;
+}
+
+nav * {
+  display: inline;
+  margin: 30px 0;
+}
+
+nav ul {
+  display: none;
+}
+
+nav .brand {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+@media(min-width: 500px) {
+  nav .brand {
+    width: auto;
+  }
+
+  nav ul {
+    display: inline;
+    float: right;
+  }
+}
+
+.splash {
+  background-color: #00897f;
+  width: 100%;
+}
