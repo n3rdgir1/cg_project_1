@@ -10,6 +10,8 @@ body {
 nav {
   height: 80px;
   overflow: hidden;
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 nav * {
@@ -43,6 +45,15 @@ ul {
   nav ul {
     display: inline;
     float: right;
+  }
+
+  nav .brand, nav ul {
+    margin: 30px 30px;
+    padding: 0 10px;
+  }
+
+  nav li {
+    padding: 0 10px;
   }
 }
 
