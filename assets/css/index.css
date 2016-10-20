@@ -47,6 +47,39 @@ ul {
 }
 
 .splash {
+  background-image: url('../images/kats-hero1.jpg');
+  background-position: 50% 80%;
   background-color: #00897f;
   width: 100%;
+  position: relative;
+  z-index: -10;
+}
+
+.splash .headline{
+  position: absolute;
+  top: 50px;
+  z-index: -1;
+  display: block;
+  margin: 0 auto;
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.splash .headline div{
+  position: relative;
+}
+.splash .main{
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+}
+.splash .post{
+  float: right;
+}
+
+.splash img{
+  display: block;
+  margin: 0 auto;
 }
