@@ -7,56 +7,58 @@ body {
   padding: 10px;
 }
 
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.875em;
+}
+h2 {
+  color: #00897f;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
 nav {
   height: 80px;
   overflow: hidden;
   max-width: 1260px;
   margin: 0 auto;
 }
-
 nav * {
   display: inline;
   margin: 30px 0;
 }
-
 nav ul {
   display: none;
 }
-
 nav .brand {
   width: 100%;
   text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
   display: inline-block;
 }
-
 nav li {
   display: inline;
 }
-
 ul {
   list-style: none;
 }
-
 nav a{
-  color: #333333;
+  color: #323232;
   text-decoration: none;
 }
-
 @media(min-width: 500px) {
   nav .brand {
     width: auto;
   }
-
   nav ul {
     display: inline;
     float: right;
   }
-
   nav .brand, nav ul {
     margin: 30px 30px;
     padding: 0 10px;
   }
-
   nav li {
     padding: 0 10px;
   }
@@ -70,7 +72,6 @@ nav a{
   position: relative;
   z-index: -10;
 }
-
 .splash .headline{
   position: absolute;
   top: 50px;
@@ -97,12 +98,10 @@ nav a{
 .splash .post{
   float: right;
 }
-
 .splash img{
   display: block;
   margin: 0 auto;
 }
-
 @media(min-width: 600px) {
   .splash img{
     padding-top: 50px;
