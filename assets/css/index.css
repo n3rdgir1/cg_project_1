@@ -178,6 +178,15 @@ nav a{
   text-align: left;
   padding: 0;
 }
+.contact ul span {
+  font-weight: bold;
+  vertical-align: top;
+}
+.contact ul span.address {
+  font-weight: normal;
+  color: #f26522;
+  display: inline-block;
+}
 
 .map {
   background-image: url('../images/kats-map.jpg');
