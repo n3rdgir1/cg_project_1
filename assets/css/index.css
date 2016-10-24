@@ -179,6 +179,29 @@ nav a{
   padding: 0;
 }
 
+.map {
+  background-image: url('../images/kats-map.jpg');
+  background-position: 50% 40%;
+  height: 200px;
+  background-size: cover;
+}
+@media(min-width: 940px) {
+  .map {
+    height: 300px;
+  }
+}
+
 footer{
   text-align: center;
+  background-color: #00897f;
+  color: white;
+  padding: 20px;
+}
+footer .h1 {
+  margin: 0;
+}
+@media(min-width: 940px) {
+  footer {
+    padding: 50px;
+  }
 }
