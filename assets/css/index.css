@@ -37,6 +37,11 @@ ul {
   list-style: none;
 }
 
+nav a{
+  color: #333333;
+  text-decoration: none;
+}
+
 @media(min-width: 500px) {
   nav .brand {
     width: auto;
