@@ -69,17 +69,20 @@ ul {
 .splash .headline{
   position: absolute;
   top: 50px;
+  width: 100%;
   z-index: -1;
-  display: block;
-  margin: 0 auto;
+  display: flex;
   color: #eeeeee;
   text-transform: uppercase;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
 }
-.splash .headline div{
+.splash .headline .callout{
   position: relative;
+  margin: auto;
+  width: auto;
+  display: inline-block;
 }
 .splash .main{
   font-size: 1.75em;
@@ -93,4 +96,18 @@ ul {
 .splash img{
   display: block;
   margin: 0 auto;
+}
+
+@media(min-width: 600px) {
+  .splash img{
+    padding-top: 50px;
+  }
+  .splash .headline {
+  }
+  .splash {
+    font-size: 1.55em;
+  }
+  .splash .main{
+    font-size: 1.8em;
+  }
 }
