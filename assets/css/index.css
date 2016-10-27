@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 .main {
-  margin: 30px;
+  margin: 0 30px;
   padding: 10px;
 }
 
@@ -122,7 +122,7 @@ nav a{
 }
 .about article {
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 30px;
   margin: 10px 0;
   text-align: center;
 }
@@ -130,17 +130,33 @@ nav a{
   text-align: left;
   margin: 10px;
 }
+@media(min-width: 660px){
+  .about .callout {
+    margin-top: 50px;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+  }
+  .about article {
+    display: inline-block;
+    width: 50%;
+  }
+  .about article:first-child {
+    margin-right: 30px;
+  }
+  .about article:last-child {
+    margin-left: 30px;
+  }
+}
 
 .spacer {
   display: flex;
-}
-.spacer div {
-  display: inline-block;
-  margin: 0 auto;
+  max-width: 1260px;
+  margin: 50px auto;
+  justify-content: space-around;
 }
 .spacer img{
   border-radius: 50%;
-  margin: 15px;
 }
 .spacer img{
   display: none;
