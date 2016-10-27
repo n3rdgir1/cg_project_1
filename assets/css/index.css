@@ -1,6 +1,8 @@
 body {
   color: #323232;
   margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.75em;
 }
 .main {
   margin: 0 30px;
@@ -10,6 +12,7 @@ body {
 h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.875em;
+  margin: 30px 0;
 }
 h2 {
   color: #00897f;
@@ -18,10 +21,32 @@ h2 {
   text-transform: uppercase;
 }
 
+article {
+  padding: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+article p, article ul{
+  text-align: left;
+  margin: 10px;
+}
+@media(min-width: 660px){
+  article {
+    display: inline-block;
+    width: 50%;
+  }
+  article:first-child {
+    margin-right: 30px;
+  }
+  article:last-child {
+    margin-left: 30px;
+  }
+}
+
 nav {
   height: 80px;
   overflow: hidden;
-  max-width: 1260px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 nav * {
@@ -36,6 +61,8 @@ nav .brand {
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
   display: inline-block;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
 nav li {
   display: inline;
@@ -83,6 +110,7 @@ nav a{
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
+  line-height: 1.3em;
 }
 .splash .headline .callout{
   position: relative;
@@ -118,17 +146,10 @@ nav a{
 
 .about {
   margin: auto;
-  max-width: 1260px;
+  max-width: 1180px;
 }
 .about article {
   background-color: #eeeeee;
-  padding: 30px;
-  margin: 10px 0;
-  text-align: center;
-}
-.about article p{
-  text-align: left;
-  margin: 10px;
 }
 @media(min-width: 660px){
   .about .callout {
@@ -137,21 +158,11 @@ nav a{
     align-items: flex;
     justify-content: space-between;
   }
-  .about article {
-    display: inline-block;
-    width: 50%;
-  }
-  .about article:first-child {
-    margin-right: 30px;
-  }
-  .about article:last-child {
-    margin-left: 30px;
-  }
 }
 
 .spacer {
   display: flex;
-  max-width: 1260px;
+  max-width: 1180px;
   margin: 50px auto;
   justify-content: space-around;
 }
@@ -177,21 +188,19 @@ nav a{
 
 .contact {
   text-align: center;
-  background-color: #eeeeee;
   padding: 15px;
 }
+.contact h1 {
+  display: none;
+}
 .contact .content {
-  max-width: 1260px;
+  max-width: 1180px;
   margin: auto;
 }
 .contact article {
-  background-color: white;
-  padding: 10px;
-  margin: 10px 0;
+  background-color: #eeeeee;
 }
 .contact ul {
-  margin: 10px;
-  text-align: left;
   padding: 0;
 }
 .contact ul span {
@@ -202,6 +211,23 @@ nav a{
   font-weight: normal;
   color: #f26522;
   display: inline-block;
+}
+@media(min-width: 660px) {
+  .contact {
+    background-color: #eeeeee;
+  }
+  .contact h1 {
+    display: block;
+  }
+  .contact article {
+    background-color: white;
+  }
+  .contact .content {
+    margin: 50px auto;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+  }
 }
 
 .map {
