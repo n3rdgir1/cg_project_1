@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   line-height: 1.75em;
+  min-width: 300px;
 }
 .main {
   margin: 0 30px;
